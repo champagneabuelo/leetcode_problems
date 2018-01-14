@@ -14,13 +14,13 @@ def create_hash(s)
 end
 
 def anagram_match(s, t)
-   s.each do |key, value|
-       if !t.key?(key)
-          return false 
-       elsif t[key] != value
-           return false
-       end
-   end
+    s.each do |key, value|
+        if !t.key?(key)
+            return false 
+        elsif t[key] != value
+            return false
+        end
+    end
     return true
 end
 
